@@ -2,8 +2,9 @@
 
 /* My WEB120 Portal Website Styles */
 
+
 html {
-    background-color:#ccc;
+    background-color: lightgray;
 }
 
 main.wrapper {
@@ -45,84 +46,115 @@ footer {
 	clear:both;
 }
 
-/* START RESPONSIVE STYLES */
+ /* Destkop */
 
-/* DESKTOP */
-@media all and (min-width:1400px) {
-	
-   main.wrapper {
-		width:80%;
-		margin:auto;
-	}
+ @media all and (min-width:1400px){
+ 
+ main.wrapper {
+    width:80%;
+    margin:auto;
+}
 
-    section {
-		width:65%;
-		float:left;
-	}
-	
+section {
+    width:65%;
+    float:left;
+}
+
+ aside {	
+    width:34%;
+    float:right;
+}
+        
+img.desktop {
+          float:left;
+           width:50%;
+        display:inline-block;
+}
+
+img.tablet, img.phone {
+       display:none;
+    }  
+
+/* Change background color of navigation on selected page */
+ul.topnav li a.selected {
+            background-color: #ccc;
+            color:#000;
+    }
+ }
+
+ 
+ /* TABLET */
+ @media all and (min-width:737px) and (max-width:1399px) {
+     
+     section {
+         width:60%;
+         float:left;
+     }
+     
      aside {	
-		width:34%;
-		float:right;
-	}
-			
-    img.desktop {
-      		float:left;
-       		width:50%;
-            display:inline-block;
-    }
-    
-    img.tablet, img.phone {
-       	display:none;
-    	}  
-    
-    /* Change background color of navigation on selected page */
-    ul.topnav li a.selected {
-        		background-color: #ccc;
-        		color:#000;
-   	 }
+         width:39%;
+         float:right;
+     }
+     
+     img.tablet {
+                width:100%;
+             display:inline-block;
+     }
+     
+     img.desktop, img.phone {
+            display:none;
+         }  
+     
+     
+     /* Change background color of navigation on selected page */
+     ul.topnav li a.selected {
+         background-color: #ccc;
+         color:#000;
+     }
+ }
+ 
+ /* PHONE */
+ @media all and (max-width:736px) {
+     
+     img.phone {
+                width:100%;
+             display:inline-block;
+     }
+     
+     img.tablet, img.desktop {
+            display:none;
+         }  
+ 
+ }
+ 
+/* Top table */
+
+.top-table {
+
+    font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
 }
 
-
-/* TABLET */
-@media all and (min-width:737px) and (max-width:1399px) {
-	
-	section {
-		width:60%;
-		float:left;
-	}
-	
-	aside {	
-		width:39%;
-		float:right;
-	}
-	
-    img.tablet {
-       		width:100%;
-            display:inline-block;
-    }
-    
-    img.desktop, img.phone {
-       	display:none;
-    	}  
-    
-    
-    /* Change background color of navigation on selected page */
-    ul.topnav li a.selected {
-        background-color: #ccc;
-        color:#000;
-    }
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
 }
 
-/* PHONE */
-@media all and (max-width:736px) {
-    
-    img.phone {
-       		width:100%;
-            display:inline-block;
-    }
-    
-    img.tablet, img.desktop {
-       	display:none;
-    	}  
+.top-table tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.bottom-table ul {
+    list-style-type: circle;
+}
 
+.top-table .bottom-table tr{
+    border: 1px black;
+}
+h1 {
+    text-align: center;
+}
+.tr-header{
+    background-color: lightskyblue;
 }
