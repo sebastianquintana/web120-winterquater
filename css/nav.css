@@ -3,10 +3,11 @@
 
 /* Remove margins and padding from the list, and add a black background color */
 ul.topnav {
-    
     list-style-type: none;
+    margin: 0;
+    padding: 0;
     overflow: hidden;
-    background-color:lightslategray;
+    background-color: #333;
 }
 
 /* Float the list items side by side */
@@ -15,7 +16,7 @@ ul.topnav li {float: left;}
 /* Style the links inside the list items */
 ul.topnav li a {
     display: inline-block;
-    color:burlywood;
+    color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -24,14 +25,8 @@ ul.topnav li a {
 }
 
 /* Change background color of links on hover */
-ul.topnav li a:hover {background-color:lightgray;}
+ul.topnav li a:hover {background-color: #555;}
 
-.topnav a.active{
-background-color: lightgray;
-}
-.topnav a.current{
-  background-color: lightgray;
-}
 /* Hide the list item that contains the link that should open and close the topnav on small screens */
 ul.topnav li.icon {display: none;}
 
@@ -66,3 +61,5 @@ ul.topnav li.icon {display: none;}
   }
 
 }
+
+
