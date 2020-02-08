@@ -26,7 +26,7 @@ switch(THIS_PAGE){
         $PageID = 'Welcome';
     break;
 
-    case 'aio.php':
+    case 'aia.php':
         $title = "Sebastian Quintana - WEB120 Title Page";
         $logo = 'fa-home';
         $PageID = 'Welcome';
@@ -52,7 +52,7 @@ switch(THIS_PAGE){
    //place URL & labels in the array here for navigation:
 $nav1['index.php'] = "Welcome";
 $nav1['big/index.php'] = "Big";
-$nav1['aio.php'] = "aio";
+$nav1['aia.php'] = "aia";
 $nav1['Flowchart.php'] = "Flowchart";
 $nav1['fp/index.php'] = "Final Project";
 $nav1['contactme.php'] = "Contact Sebastian";
@@ -94,4 +94,5 @@ function makeLinks($linkArray)
 }
 
 ?>
+
 
