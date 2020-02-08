@@ -1,7 +1,10 @@
 <?php include 'includes/header.php';?>
- 
+ <!-- START LEFT COL -->
+<section class="leftcol">
+<h2 class="pageID"><?=$PageID?></h2>
 
 <!-- MAKE SURE YOU GET YOUR (3) IMAGES SAVED INTO YOUR IMAGES FOLDER -->
+
  <img src="images/meaceandthedogs.jpg" class="desktop" alt="Seba and ace with dogs" />
  <img src="images/meandmymother.jpg" class="phone" alt="sebastian with his mother" />
 </section>
