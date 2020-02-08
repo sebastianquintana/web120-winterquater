@@ -24,7 +24,3 @@
     </ul>
   </nav>
 </header>
-        
-<!-- START LEFT COL -->
-<section class="leftcol">
-<h2 class="pageID"><?=$PageID?></h2>
