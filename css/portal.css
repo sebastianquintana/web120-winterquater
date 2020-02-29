@@ -5,6 +5,7 @@
 
 html {
     background-color: lightgray;
+    text-align: center;
 }
 
 main.wrapper {
@@ -158,3 +159,35 @@ h1 {
 .tr-header{
     background-color: lightskyblue;
 }
+.wrapper {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows:3fr 2fr 1fr;
+    grid-template-areas:
+    "main main aside"
+    "main main sidebar"
+    "header header sidebar"
+    "footer footer footer";
+    ;
+}
+.leftcol {
+    grid-area: main;
+    grid-column: 1/4;
+    grid-row: 1/3;
+}
+.pagrah {
+grid-area: header;
+grid-column: 1/4;
+grid-row: 3/5;
+}
+.rightcolumn {
+    grid-area: aside;
+    grid-column: 4/6;
+    grid-row: 1/5;
+}
+.footer{
+    grid-area: footer;
+    grid-column: 1/6;
+    grid-row: 5/6;
+}
+
