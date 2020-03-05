@@ -66,10 +66,6 @@ grid-row: 1/2;
     grid-column: 3/4;
     grid-row: 3/5;
     min-height:400px;
-    background: url(img/gym.jpg);
-    background-size: cover;
-    display: flex;
-    
 }
 .footer{
     grid-area: footer;
